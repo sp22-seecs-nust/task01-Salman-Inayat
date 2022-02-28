@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             ElevatedButton(
-              child: const Text('Fetch JSON'),
+              child: const Text('Load user phone number'),
               onPressed: readJson,
             ),
             Text(
