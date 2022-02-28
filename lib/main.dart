@@ -34,10 +34,9 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('assets/people.json');
-    final responseData = await json.decode(response);
 
     setState(() {
-      person = responseData;
+      person = json.decode(response);
     });
 
     final String numbers = await rootBundle.loadString('assets/numbers.json');
